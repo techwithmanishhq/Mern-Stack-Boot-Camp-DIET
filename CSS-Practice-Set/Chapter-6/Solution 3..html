@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Flexbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .div1 {
+            background-color: red;
+            width: 40%;
+            height: 300px;
+        }
+
+        .div2 {
+            background-color: green;
+            width: 40%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            TechWithManishHQ
+        </div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="div1">
+            <h2>Div 1</h2>
+        </div>
+
+        <div class="div2">
+            <h2>Div 2</h2>
+        </div>
+
+    </div>
+
+</body>
+</html>

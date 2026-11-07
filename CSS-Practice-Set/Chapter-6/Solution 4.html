@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechWithManishHQ | Profile Cards</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #020611;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #000;
+            border-bottom: 1px solid #007bff;
+
+            padding: 20px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            color: #00c8ff;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00c8ff;
+        }
+
+        /* Hero Section */
+        
+        .hero {
+            width: 100%;
+            height: 100vh;
+
+            background-image: url("assets/PF.png");
+
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            background-color: black;
+        }
+
+
+        /* Profile Cards */
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            background: linear-gradient(
+                135deg,
+                #06152c,
+                #020611
+            );
+
+            width: 30%;
+            padding: 25px;
+
+            text-align: center;
+
+            border: 1px solid #00aaff;
+            border-radius: 20px;
+
+            box-shadow: 0 0 15px #003b80;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px #00aaff;
+        }
+
+        .card img {
+            width: 130px;
+            height: 130px;
+
+            border-radius: 50%;
+            object-fit: cover;
+
+            border: 3px solid #00c8ff;
+            box-shadow: 0 0 15px #008cff;
+
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #b8cce8;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+
+            color: #00c8ff;
+            text-decoration: none;
+
+            border: 1px solid #00c8ff;
+            border-radius: 10px;
+
+            padding: 10px 25px;
+
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #00c8ff;
+            color: black;
+            box-shadow: 0 0 15px #00c8ff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            background-image: none;
+
+            border-top: 1px solid #008cff;
+
+            color: white;
+            text-align: center;
+
+            padding: 25px;
+            line-height: 2;
+        }
+
+        footer span {
+            color: #00c8ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .navbar a {
+                margin: 8px;
+            }
+
+            .hero {
+                height: 300px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <h2> &lt;/&gt; TechWithManishHQ</h2>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    </section>
+
+    <!-- Profile Cards -->
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="assets/Manna.jpeg"
+                 alt="Manna Profile">
+
+            <h2>Manna</h2>
+
+            <p>Web Developer</p>
+
+            <a href="#">View Profile →</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Manish.png"
+                 alt="Manish Profile">
+
+            <h2>Manish</h2>
+
+            <p>AI/ML Engineer</p>
+
+            <a href="#">View Profile →</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="assets/Mann.jpeg"
+                 alt="Mann Profile">
+
+            <h2>Mann</h2>
+
+            <p>Software Developer</p>
+
+            <a href="#">View Profile →</a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 <span>TechWithManishHQ</span>.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Code • Learn • Build • Grow 🚀
+        </p>
+
+    </footer>
+
+</body>
+</html>
